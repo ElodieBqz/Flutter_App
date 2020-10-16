@@ -20,6 +20,7 @@ class CategoryItem extends StatelessWidget {
   }
 
   @override
+  //creation des vignettes
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () => selectCategory(context),

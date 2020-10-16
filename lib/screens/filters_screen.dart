@@ -49,7 +49,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Your Filters'),
+        title: Text('Tes préférences'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.save),
@@ -71,7 +71,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
           Container(
             padding: EdgeInsets.all(20),
             child: Text(
-              'Adjust your meal selection.',
+              'Un séléction plus proche de toi !',
               style: Theme.of(context).textTheme.title,
             ),
           ),
@@ -80,7 +80,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
               children: <Widget>[
                 _buildSwitchListTile(
                   'Gluten-free',
-                  'Only include gluten-free meals.',
+                  'Plats sans gluten.',
                   _glutenFree,
                       (newValue) {
                     setState(
@@ -92,7 +92,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
                 ),
                 _buildSwitchListTile(
                   'Lactose-free',
-                  'Only include lactose-free meals.',
+                  'séléction sans lactose ',
                   _lactoseFree,
                       (newValue) {
                     setState(
@@ -104,7 +104,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
                 ),
                 _buildSwitchListTile(
                   'Vegetarian',
-                  'Only include vegetarian meals.',
+                  'Plats végétariens',
                   _vegetarian,
                       (newValue) {
                     setState(
@@ -116,7 +116,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
                 ),
                 _buildSwitchListTile(
                   'Vegan',
-                  'Only include vegan meals.',
+                  'Uniquement des choix Végan.',
                   _vegan,
                       (newValue) {
                     setState(

@@ -38,13 +38,13 @@ class MealItem extends StatelessWidget {
   String get affordabilityText {
     switch (affordability) {
       case Affordability.Affordable:
-        return 'Affordable';
+        return 'Abordable';
         break;
       case Affordability.Pricey:
-        return 'Pricey';
+        return 'Moyen';
         break;
       case Affordability.Luxurious:
-        return 'Expensive';
+        return 'Coûteuse';
         break;
       default:
         return 'Unknown';
